@@ -1,7 +1,7 @@
 ---
 
 - src: ome.python3_virtualenv
-  # version: 0.2.0
+  version: 0.2.0
 
 - src: ome.omero_server
   # version: 6.1.0
