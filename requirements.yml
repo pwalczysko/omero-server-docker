@@ -7,4 +7,4 @@
 # - src: ome.omero_server
 - name: omero_server
   src: https://github.com/pwalczysko/ansible-role-omero-server
-  version: try-no-symlink
+  version: 6.1.0
