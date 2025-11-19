@@ -1,7 +1,7 @@
 #!/usr/local/bin/dumb-init /bin/bash
 
 set -e
-source /opt/omero/server/venv-3.12/bin/activate
+source /opt/omero/server/venv3/bin/activate
 
 for f in /startup/*; do
     if [ -f "$f" -a -x "$f" ]; then

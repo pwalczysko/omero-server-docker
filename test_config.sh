@@ -7,7 +7,7 @@ set -x
 # Must be exported by the caller:
 # PREFIX
 
-OMERO=/opt/omero/server/venv-3.12/bin/omero
+OMERO=/opt/omero/server/venv3/bin/omero
 
 docker exec $PREFIX-server $OMERO config get --show-password
 
