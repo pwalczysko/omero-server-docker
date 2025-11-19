@@ -1,4 +1,4 @@
-Copyright (c) 2015, Open Microscopy Environment
+Copyright (c) 2025, Open Microscopy Environment
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
