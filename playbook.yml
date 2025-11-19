@@ -14,3 +14,4 @@
     omero_server_python3: True
     omero_server_python3_replace_omero: False
     postgresql_version: "16"
+    python_version: "3.9"
