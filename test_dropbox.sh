@@ -11,7 +11,12 @@ OMERO=/opt/omero/server/venv3/bin/omero
 FILENAME=$(date +%Y%m%d-%H%M%S-%N).fake
 SERVER=localhost:4064
 docker exec $PREFIX-server sh -c \
-    "mkdir -p /OMERO/DropBox/root && touch /OMERO/DropBox/root/$FILENAME"
+    "mkdir -p /file-to-import && touch /file-to-import/$FILENAME"
+
+docker exec $PREFIX-server $OMERO login -C -s $SERVER -u "$OMERO_USER" -q -w "$OMERO_PASS" --retry 120
+
+docker exec $PREFIX-server $OMERO import /file-to-import/$FILENAME --retry 30
+
 
 echo -n "Checking for imported DropBox image $FILENAME "
 # Retry for 4 mins
