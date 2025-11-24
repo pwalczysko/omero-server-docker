@@ -48,9 +48,6 @@ bash test_config.sh
 
 # Wait a minute to ensure other servers are running
 sleep 60
-# Now that we know the server is up, test Dropbox
 
-bash test_dropbox.sh
-
-# And Processor (slave-1)
+# Test Processor - includes import test
 bash test_processor.sh
